@@ -1,192 +1,55 @@
 <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "colorTheme": "dark",
-  "dateRange": "1D",
-  "showChart": true,
+  "autosize": true,
+  "symbol": "KUCOIN:BTCUSDT",
+  "interval": "15",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
   "locale": "en",
-  "width": "100%",
-  "height": "100%",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "showSymbolLogo": true,
-  "showFloatingTooltip": true,
-  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-  "gridLineColor": "rgba(240, 243, 250, 0)",
-  "scaleFontColor": "rgba(106, 109, 120, 1)",
-  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-  "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
-  "tabs": [
-    {
-      "title": "Cryptos",
-      "symbols": [
-        {
-          "s": "KUCOIN:BTCUSDT"
-        },
-        {
-          "s": "KUCOIN:ETHUSDT"
-        },
-        {
-          "s": "KUCOIN:MKRUSDT"
-        },
-        {
-          "s": "KUCOIN:BNBUSDT"
-        },
-        {
-          "s": "KUCOIN:SOLUSDT"
-        },
-        {
-          "s": "KUCOIN:XRPUSDT"
-        },
-        {
-          "s": "KUCOIN:TRXUSDT"
-        },
-        {
-          "s": "KUCOIN:ADAUSDT"
-        },
-        {
-          "s": "KUCOIN:LINKUSDT"
-        },
-        {
-          "s": "KUCOIN:DOTUSDT"
-        },
-        {
-          "s": "KUCOIN:FTMUSDT"
-        },
-        {
-          "s": "KUCOIN:MATICUSDT"
-        },
-        {
-          "s": "KUCOIN:LUNCUSDT"
-        },
-        {
-          "s": "KUCOIN:SHIBUSDT"
-        }
-      ]
-    },
-    {
-      "title": "Forex",
-      "symbols": [
-        {
-          "s": "ACTIVTRADES:EURUSD"
-        },
-        {
-          "s": "ACTIVTRADES:EURGBP"
-        },
-        {
-          "s": "ACTIVTRADES:EURAUD"
-        },
-        {
-          "s": "ACTIVTRADES:EURCHF"
-        },
-        {
-          "s": "ACTIVTRADES:EURCAD"
-        },
-        {
-          "s": "ACTIVTRADES:EURMXN"
-        },
-        {
-          "s": "ACTIVTRADES:EURPLN"
-        },
-        {
-          "s": "ACTIVTRADES:GBPUSD"
-        },
-        {
-          "s": "ACTIVTRADES:USDJPY"
-        },
-        {
-          "s": "ACTIVTRADES:USDCAD"
-        },
-        {
-          "s": "ACTIVTRADES:USDBRL"
-        },
-        {
-          "s": "ACTIVTRADES:USDPLN"
-        }
-      ],
-      "originalTitle": "Forex"
-    },
-    {
-      "title": "Futures",
-      "symbols": [
-        {
-          "s": "COMEX:GC1!"
-        },
-        {
-          "s": "NYMEX:CL1!"
-        },
-        {
-          "s": "NYMEX:NG1!"
-        },
-        {
-          "s": "CME_MINI:ES1!"
-        },
-        {
-          "s": "CME_MINI:NQ1!"
-        },
-        {
-          "s": "COMEX:SI1!"
-        },
-        {
-          "s": "NYMEX:PL1!"
-        },
-        {
-          "s": "CBOT:ZC1!"
-        },
-        {
-          "s": "NYMEX_MINI:QG1!"
-        }
-      ],
-      "originalTitle": "Futures"
-    },
-    {
-      "title": "Stocks",
-      "symbols": [
-        {
-          "s": "NASDAQ:TSLA"
-        },
-        {
-          "s": "NASDAQ:AAPL"
-        },
-        {
-          "s": "NASDAQ:NVDA"
-        },
-        {
-          "s": "NASDAQ:AMD"
-        },
-        {
-          "s": "NASDAQ:MSFT"
-        },
-        {
-          "s": "NASDAQ:AMZN"
-        },
-        {
-          "s": "NASDAQ:META"
-        },
-        {
-          "s": "NSE:HDFCBANK"
-        },
-        {
-          "s": "NASDAQ:NFLX"
-        },
-        {
-          "s": "NASDAQ:GOOGL"
-        },
-        {
-          "s": "NASDAQ:PYPL"
-        },
-        {
-          "s": "NASDAQ:ADBE"
-        }
-      ]
-    }
-  ]
+  "enable_publishing": true,
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "watchlist": [
+    "KUCOIN:BTCUSDT",
+    "KUCOIN:ETHUSDT",
+    "KUCOIN:MKRUSDT",
+    "KUCOIN:SOLUSDT",
+    "KUCOIN:XRPUSDT",
+    "KUCOIN:MATICUSDT",
+    "KUCOIN:ADAUSDT",
+    "KUCOIN:LUNCUSDT",
+    "KUCOIN:FTMUSDT",
+    "KUCOIN:BLURUSDT",
+    "KUCOIN:LTCUSDT",
+    "KUCOIN:TRXUSDT",
+    "KUCOIN:VETUSDT",
+    "KUCOIN:AAVEUSDT",
+    "KUCOIN:LUNAUSDT",
+    "KUCOIN:BNBUSDT",
+    "KUCOIN:DOGEUSDT"
+  ],
+  "details": true,
+  "hotlist": true,
+  "calendar": true,
+  "studies": [
+    "STD;24h%Volume",
+    "STD;DEMA",
+    "STD;MA%1Cross",
+    "STD;SMA",
+    "STD;TEMA",
+    "STD;UP_DOWN_Volume",
+    "Volume@tv-basicstudies"
+  ],
+  "show_popup_button": true,
+  "popup_width": "1000",
+  "popup_height": "650",
+  "support_host": "https://www.tradingview.com"
 }
   </script>
 </div>
